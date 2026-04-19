@@ -20,6 +20,54 @@ This project focuses on processing 3D mesh data and converting it into point clo
 
 ---
 
+## 🧠 What is PointNet?
+
+PointNet is a deep learning architecture designed to work directly on **3D point clouds**.
+
+Unlike images, point clouds are:
+
+* Unordered
+* Irregular
+* Sparse
+
+---
+
+### ⚙️ How PointNet Works
+
+1. Input: A set of 3D points → `(x, y, z)`
+2. Apply MLP (Multi-Layer Perceptron) to each point
+3. Aggregate features using **Max Pooling**
+4. Output → Object class (chair, table, etc.)
+
+---
+
+### 📐 Architecture Overview
+
+![PointNet Architecture](images/pointnet.png)
+
+---
+
+### 🔑 Key Idea: Order Invariance
+
+Point clouds have **no fixed order**, meaning:
+
+`(p1, p2, p3)` = `(p3, p1, p2)`
+
+PointNet solves this using:
+
+👉 **Max Pooling**
+
+Which extracts the most important features regardless of order.
+
+---
+
+### 📊 Input and Output
+
+* **Input:** `(1024, 3)` → 1024 points
+* **Output:** Class label
+
+---
+
 ## ⚙️ Tech Stack
 
 * Python 3.10
@@ -37,7 +85,7 @@ This project focuses on processing 3D mesh data and converting it into point clo
 Point_Cloud/
 │
 ├── data/                # Dataset (ignored in Git)
-├── images/              # Output images
+├── images/              # Output + architecture images
 ├── scripts/             # Conversion + dataset loader
 ├── requirements.txt
 └── README.md
@@ -106,8 +154,19 @@ python scripts/visualize.py
 
 ---
 
+## 🚀 Future Improvements
+
+* Implement full PointNet architecture
+* Add PointNet++ / DGCNN
+* Improve classification accuracy
+* Add real-time prediction
+* Deploy as a web application
+
+---
+
 ## 👨‍💻 Author
 
 **Aditya Paratwar**
 
 ---
+
