@@ -154,16 +154,6 @@ python scripts/visualize.py
 
 ---
 
-## 🚀 Future Improvements
-
-* Implement full PointNet architecture
-* Add PointNet++ / DGCNN
-* Improve classification accuracy
-* Add real-time prediction
-* Deploy as a web application
-
----
-
 ## 👨‍💻 Author
 
 **Aditya Paratwar**
