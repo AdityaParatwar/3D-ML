@@ -1,3 +1,7 @@
+![3D ML Banner](https://miro.medium.com/v2/resize:fit:1400/1*9mXhK4wXc8c9YgXJv1nP6w.png)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
+![Open3D](https://img.shields.io/badge/Open3D-3D--Processing-green)
 # 🧠 Point Cloud Classification (3D ML)
 
 This project focuses on processing 3D mesh data and converting it into point clouds for object classification using deep learning techniques.
