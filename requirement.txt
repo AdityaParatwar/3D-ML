@@ -1,0 +1,6 @@
+torch
+torchvision
+open3d==0.18.0
+numpy
+matplotlib
+trimesh
